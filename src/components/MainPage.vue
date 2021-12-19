@@ -3,15 +3,19 @@ import { ref } from 'vue';
 const imgUrl: string = new URL('/assets/mainpageimage.png', import.meta.url)
   .href;
 const mainpageimage = ref(imgUrl);
+const mainpageimage2 = ref(
+  'https://raw.githubusercontent.com/tim-liu-wzvtc/weblock-logindemo/master/public/mainpageimage.png'
+);
 
 defineProps<{ msg: string }>();
 
 const count = ref(0);
-
 </script>
 
 <template>
-  <image :src="mainpageimage" />
+  <image
+    src="https://raw.githubusercontent.com/tim-liu-wzvtc/weblock-logindemo/master/public/mainpageimage.png"
+  />
 
   <button type="button" @click="count++">count is: {{ count }}</button>
   <p>
