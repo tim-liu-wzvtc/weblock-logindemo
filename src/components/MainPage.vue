@@ -7,6 +7,7 @@ const mainpageimage = ref(imgUrl);
 defineProps<{ msg: string }>();
 
 const count = ref(0);
+
 </script>
 
 <template>
