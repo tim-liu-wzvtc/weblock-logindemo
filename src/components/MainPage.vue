@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import mainpageimage from '../assets/mainpageimage.png';
+const imgUrl: string = new URL('/assets/mainpageimage.png', import.meta.url)
+  .href;
+const mainpageimage = ref(imgUrl);
 
 defineProps<{ msg: string }>();
 
