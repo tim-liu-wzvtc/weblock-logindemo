@@ -22,8 +22,6 @@ let loginInstance = new Login(data);
 const login = loginInstance.login;
 </script>
 
-</script>
-
 <style scoped>
 a {
   color: #42b983;
