@@ -13,8 +13,9 @@ const count = ref(0);
 </script>
 
 <template>
-  <image
-    src="https://raw.githubusercontent.com/tim-liu-wzvtc/weblock-logindemo/master/public/mainpageimage.png"
+  <img
+    style="height: 100px; width: 100px"
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg=="
   />
 
   <button type="button" @click="count++">count is: {{ count }}</button>
