@@ -4,7 +4,7 @@
     <br />
     <input type="password" v-model="data.password" />
     <br />
-    <input type="button" value="登录1" @click="login" />
+    <input type="button" value="登录12" @click="login" />
     <br />
     <RemoteComponent
       remoteUrl="http://localhost:7777/Input3.umd.js"
