@@ -15,5 +15,15 @@
 
 <script setup lang="ts">
 import RemoteComponent from '../RemoteComp.vue';
-import { data, login } from './LoginBase';
+import { ref, reactive } from 'vue';
+import { Login, LoginInfo } from './Login';
+
+const data: LoginInfo = reactive({
+  name: '',
+  password: '',
+});
+
+let loginInstance = new Login(data);
+
+const login = loginInstance.login;
 </script>

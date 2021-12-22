@@ -1,5 +1,4 @@
-import { ref, reactive } from 'vue';
-import Login from './Login';
+import { Login } from './Login';
 
 export interface ILogin {
   login(): void;
@@ -17,14 +16,3 @@ export class LoginBase {
     this.data = data_;
   }
 }
-
-const data: LoginInfo = reactive({
-  name: '',
-  password: '',
-});
-
-let loginInstance = new Login(data);
-
-const login = loginInstance.login;
-
-export { data, login };
