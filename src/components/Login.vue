@@ -4,14 +4,20 @@
     <br />
     <input type="password" v-model="data.password" />
     <br />
-    <input type="button" value="登录" @click="login" />
+    <input type="button" value="登录1" @click="login" />
+    <br />
+    <RemoteComponent
+      :remoteUrl="http://localhost:7777/Input3.umd.js"
+      :attrs="{ text: '', Type: 'text', Top: '80px', Left: '0px', label: '' }"
+    />
   </div>
 </template>
 
 <script setup lang="ts">
+import RemoteComponent from '../components/RemoteComp.vue';
 import { ref, reactive } from 'vue';
 import type { LoginInfo } from './Login';
-import { Login } from './Login'
+import { Login } from './Login';
 
 const data: LoginInfo = reactive({
   name: '',
