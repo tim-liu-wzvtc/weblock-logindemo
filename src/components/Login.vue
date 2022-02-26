@@ -6,15 +6,10 @@
     <br />
     <input type="button" value="登录12" @click="login" />
     <br />
-    <RemoteComponent
-      remoteUrl="http://localhost:7777/Input3.umd.js"
-      :attrs="{ text: '', Type: 'text', Top: '80px', Left: '0px', label: '' }"
-    />
   </div>
 </template>
 
 <script setup lang="ts">
-import RemoteComponent from '../RemoteComp.vue';
 import { ref, reactive } from 'vue';
 import { Login, LoginInfo } from './Login';
 

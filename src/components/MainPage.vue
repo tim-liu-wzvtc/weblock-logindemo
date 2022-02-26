@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import PicChart from './PicChart.vue';
+import PieChart from './PieChart.vue';
 </script>
 
 <template>
