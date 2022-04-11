@@ -1,7 +1,7 @@
 // src/utils/external-component.js
       // https://stackoverflow.com/questions/63581504/vue-3-external-component-plugin-loading-in-runtime
       export default async function externalComponent(url) {
-        url="http://localhost:5500"+url;
+        url="http://localhost:5500/public"+url;
         const name = url
           .split('/')
           .reverse()[0]
